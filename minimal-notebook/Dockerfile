@@ -1,12 +1,8 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG OWNER=jupyter
-ARG BASE_CONTAINER=$OWNER/base-notebook
-#FROM $BASE_CONTAINER
-FROM images.sbgenomics.com/nevena_nikolic/base-notebook-cuda:11.1
 
-
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+FROM images.sbgenomics.com/nevena_nikolic/base-notebook-cuda:11.6
+LABEL maintainer="Nevena Nikolic <nevena.nikolic@sbgenomics.com>"
 
 USER root
 
